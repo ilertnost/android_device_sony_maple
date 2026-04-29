@@ -19,5 +19,9 @@ TARGET_SCREEN_DENSITY := 320
 # Kernel
 TARGET_KERNEL_CONFIG += sony/lilac.config
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit vendor board configs
 include vendor/sony/lilac/BoardConfigVendor.mk
