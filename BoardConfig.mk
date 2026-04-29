@@ -23,5 +23,8 @@ TARGET_KERNEL_CONFIG += sony/lilac.config
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.qcom
+
 # Inherit vendor board configs
 include vendor/sony/lilac/BoardConfigVendor.mk
