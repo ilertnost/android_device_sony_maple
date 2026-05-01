@@ -20,14 +20,17 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
-    ('vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service', 'vendor/lib64/lib_fpc_tac_shared.so'): blob_fixup()
+    'vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service': blob_fixup()
         .replace_needed('libprotobuf-c.so', 'libprotobuf-c-idd.so'),
+    'vendor/lib64/lib_fpc_tac_shared.so': blob_fixup()
+        .replace_needed('libprotobuf-c.so', 'libprotobuf-c-idd.so')
+        .binary_regex_replace(b'/system/etc/firmware', b'/vendor/firmware\x00\x00\x00\x00'),
     'vendor/usr/idc/clearpad.idc': blob_fixup()
         .regex_replace('/system/somc', '/vendor/etc'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'lilac',
+    'maple',
     'sony',
     blob_fixups=blob_fixups,
     namespace_imports=namespace_imports,

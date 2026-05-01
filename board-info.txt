@@ -1,1 +1,1 @@
-require board=lilac|G8441
+require board=maple|G8141|G8142|G8188

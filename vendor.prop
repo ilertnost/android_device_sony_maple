@@ -1,14 +1,11 @@
 # Bluetooth
-bluetooth.device.default_name=Xperia XZ1 Compact
-
-# HDR
-vendor.display.hwc_disable_hdr=1
+bluetooth.device.default_name=Xperia XZ Premium
 
 # MiscTA
-ro.semc.product.model=G8441
+ro.semc.product.model=G8142
 ro.semc.version.fs=GENERIC
-ro.semc.version.fs_revision=47.2.A.11.228
-ro.semc.version.sw=1307-7511
-ro.semc.version.sw_revision=47.2.A.11.228
+ro.semc.version.fs_revision=47.2.A.10.107
+ro.semc.version.sw=1306-8499
+ro.semc.version.sw_revision=47.2.A.10.107
 ro.semc.version.sw_type=user
 ro.semc.version.sw_variant=GLOBAL-LTE4A
