@@ -13,6 +13,9 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 # Inherit common board configs
 include device/sony/yoshino-common/BoardConfigCommon.mk
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # Kernel
 TARGET_KERNEL_CONFIG += sony/lilac.config
 
